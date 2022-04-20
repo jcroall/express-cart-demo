@@ -1,0 +1,213 @@
+BD-Scan-Action: Start
+
+--- BD-SCAN-ACTION CONFIGURATION (version 1.0) -----------------------
+  --sarif:               OUTPUT GH SARIF TO './blackduck-sarif.json'
+  --bd_url:              BD URL https://testing.blackduck.synopsys.com
+  --bd_token:            BD Token *************
+  --mode:                Run Rapid scan
+  --no_files_check       Skip check of GH commit/PR for changed package manager config files
+-------------------------------------------------------------------------
+
+BD-Scan-Action: Interfacing with GitHub
+BD-Scan-Action: INFO: Running Black Duck detect with the following options: ['--blackduck.url=https://testing.blackduck.synopsys.com', '--blackduck.api.token=ZjBiYmQzYTctYzk0YS00MDRhLWE2YjAtNTU1ZTAzMzdhYzg3OjIyMGM3MjY1LTU1ZDgtNDMzZS04YzNiLWE1N2UxMThmZTZmNw==', '--detect.blackduck.scan.mode=rapid', '--detect.output.path=blackduck-output', '--detect.bdio.file.name=scanout.bdio', '--detect.cleanup=false']
+______     _            _
+|  _  \   | |          | |
+| | | |___| |_ ___  ___| |_
+| | | / _ \ __/ _ \/ __| __|
+| |/ /  __/ ||  __/ (__| |_
+|___/ \___|\__\___|\___|\__|
+
+
+Detect Version: 7.12.1
+
+2022-04-20 19:27:52 GMT INFO  [main] ---
+2022-04-20 19:27:52 GMT INFO  [main] --- Current property values:
+2022-04-20 19:27:52 GMT INFO  [main] --- --property = value [notes]
+2022-04-20 19:27:52 GMT INFO  [main] --- ------------------------------------------------------------
+2022-04-20 19:27:52 GMT INFO  [main] --- blackduck.api.token = **************************************************************************************************** [cmd]
+2022-04-20 19:27:52 GMT INFO  [main] --- blackduck.url = https://testing.blackduck.synopsys.com [cmd]
+2022-04-20 19:27:52 GMT INFO  [main] --- detect.bdio.file.name = scanout.bdio [cmd]
+2022-04-20 19:27:52 GMT INFO  [main] --- detect.blackduck.scan.mode = rapid [cmd]
+2022-04-20 19:27:52 GMT INFO  [main] --- detect.cleanup = false [cmd]
+2022-04-20 19:27:52 GMT INFO  [main] --- detect.output.path = blackduck-output [cmd]
+2022-04-20 19:27:52 GMT INFO  [main] --- ------------------------------------------------------------
+2022-04-20 19:27:52 GMT INFO  [main] ---
+2022-04-20 19:27:52 GMT INFO  [main] --- Tilde's will be automatically resolved to USER HOME.
+2022-04-20 19:27:52 GMT INFO  [main] --- Source directory: /Users/jcroall/git/github/express-cart-demo
+2022-04-20 19:27:52 GMT INFO  [main] --- Output directory: /Users/jcroall/git/github/express-cart-demo/blackduck-output
+2022-04-20 19:27:52 GMT INFO  [main] --- Run directory: /Users/jcroall/git/github/express-cart-demo/blackduck-output/runs/2022-04-20-19-27-52-351
+2022-04-20 19:27:52 GMT INFO  [main] ---
+2022-04-20 19:27:57 GMT INFO  [main] --- Successfully connected to Black Duck (version 2022.2.1)!
+2022-04-20 19:27:59 GMT INFO  [main] --- ----------------------------------
+2022-04-20 19:27:59 GMT INFO  [main] --- Will include the Docker tool.
+2022-04-20 19:27:59 GMT INFO  [main] --- Docker actions finished.
+2022-04-20 19:27:59 GMT INFO  [main] --- ----------------------------------
+2022-04-20 19:27:59 GMT INFO  [main] --- Bazel tool will not be run.
+2022-04-20 19:27:59 GMT INFO  [main] --- ----------------------------------
+2022-04-20 19:27:59 GMT INFO  [main] --- Will include the Detectors tool.
+2022-04-20 19:27:59 GMT INFO  [main] --- Searching for detectors. This may take awhile.
+2022-04-20 19:27:59 GMT INFO  [main] --- Evaluating detectors. This may take a while.
+2022-04-20 19:28:02 GMT INFO  [main] ---
+2022-04-20 19:28:02 GMT INFO  [main] --- Running executable >/usr/bin/git config --get remote.origin.url
+2022-04-20 19:28:02 GMT INFO  [main] --- Process return code: 0
+2022-04-20 19:28:02 GMT INFO  [main] --- Running executable >/usr/bin/git rev-parse --abbrev-ref HEAD
+2022-04-20 19:28:02 GMT INFO  [main] --- Process return code: 0
+2022-04-20 19:28:02 GMT INFO  [main] --- ======================================================================================================
+2022-04-20 19:28:02 GMT INFO  [main] --- Detector Report
+2022-04-20 19:28:02 GMT INFO  [main] --- ======================================================================================================
+2022-04-20 19:28:02 GMT INFO  [main] --- 	/Users/jcroall/git/github/express-cart-demo (depth 0)
+2022-04-20 19:28:02 GMT INFO  [main] --- 		GIT - Git
+2022-04-20 19:28:02 GMT INFO  [main] --- 			Found file: /Users/jcroall/git/github/express-cart-demo/.git
+2022-04-20 19:28:02 GMT INFO  [main] --- 			Found executable: /usr/bin/git
+2022-04-20 19:28:02 GMT INFO  [main] --- 		NPM - Package Lock
+2022-04-20 19:28:02 GMT INFO  [main] --- 			Found file: /Users/jcroall/git/github/express-cart-demo/package-lock.json
+2022-04-20 19:28:02 GMT INFO  [main] --- 			Found file: /Users/jcroall/git/github/express-cart-demo/package.json
+2022-04-20 19:28:02 GMT INFO  [main] --- ----------------------------------
+2022-04-20 19:28:02 GMT INFO  [main] --- The following project names were found:
+2022-04-20 19:28:02 GMT INFO  [main] --- 	NPM: express-cart, 1.1.13
+2022-04-20 19:28:02 GMT INFO  [main] --- Chose to use NPM at depth 0 for project name and version. Override with detect.project.detector.
+2022-04-20 19:28:06 GMT INFO  [main] --- Detectors actions finished.
+2022-04-20 19:28:06 GMT INFO  [main] --- ----------------------------------
+2022-04-20 19:28:06 GMT INFO  [main] --- Project name: express-cart
+2022-04-20 19:28:06 GMT INFO  [main] --- Project version: 1.1.13
+2022-04-20 19:28:11 GMT INFO  [main] --- Begin Rapid Mode Scan
+2022-04-20 19:28:13 GMT INFO  [main] --- Uploaded Rapid Scan: https://testing.blackduck.synopsys.com/api/developer-scans/af7b456c-401b-4e59-b3a5-c616609c9a92
+2022-04-20 19:28:14 GMT INFO  [main] --- Try #1 for task Waiting for Rapid Scans (elapsed: 00:00:00.000)...complete!
+2022-04-20 19:28:14 GMT INFO  [main] --- Rapid Scan Result Details:
+2022-04-20 19:28:14 GMT INFO  [main] ---
+2022-04-20 19:28:14 GMT INFO  [main] --- 	Components Errors:
+2022-04-20 19:28:14 GMT INFO  [main] ---
+2022-04-20 19:28:14 GMT INFO  [main] --- 	Components Warnings:
+2022-04-20 19:28:14 GMT INFO  [main] ---
+2022-04-20 19:28:14 GMT INFO  [main] --- 	Security Errors:
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component ajv version 6.10.2 with ID npmjs:ajv/6.10.2 violates policy No Critical/High: found vulnerability BDSA-2020-3798 with severity HIGH and CVSS score 7.1
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Async version 2.6.3 with ID npmjs:async/2.6.3 violates policy No Critical/High: found vulnerability BDSA-2022-0962 with severity HIGH and CVSS score 8.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component axios version 0.19.0 with ID npmjs:axios/0.19.0 violates policy No Critical/High: found vulnerability CVE-2021-3749 with severity HIGH and CVSS score 7.5
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component axios version 0.19.0 with ID npmjs:axios/0.19.0 violates policy No Critical/High: found vulnerability BDSA-2020-3243 with severity HIGH and CVSS score 7.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component js-bson version 1.1.1 with ID npmjs:bson/1.1.1 violates policy No Critical/High: found vulnerability BDSA-2020-0604 with severity HIGH and CVSS score 7.9
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component css-what version 2.1.0 with ID npmjs:css-what/2.1.0 violates policy No Critical/High: found vulnerability CVE-2021-33587 with severity HIGH and CVSS score 7.5
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component dot-prop version 4.2.0 with ID npmjs:dot-prop/4.2.0 violates policy No Critical/High: found vulnerability BDSA-2020-0654 with severity HIGH and CVSS score 7.4
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component express-handlebars version v3.1.0 with ID npmjs:express-handlebars/3.1.0 violates policy No Critical/High: found vulnerability CVE-2021-32820 with severity HIGH and CVSS score 8.6
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component follow-redirects version v1.5.10 with ID npmjs:follow-redirects/1.5.10 violates policy No Critical/High: found vulnerability BDSA-2022-0139 with severity HIGH and CVSS score 7.7
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Handlebars.js version 4.4.5 with ID npmjs:handlebars/4.4.5 violates policy No Critical/High: found vulnerability BDSA-2021-1225 with severity HIGH and CVSS score 7.3
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Handlebars.js version 4.4.5 with ID npmjs:handlebars/4.4.5 violates policy No Critical/High: found vulnerability BDSA-2021-0925 with severity HIGH and CVSS score 7.3
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Handlebars.js version 4.4.5 with ID npmjs:handlebars/4.4.5 violates policy No Critical/High: found vulnerability BDSA-2019-3692 with severity HIGH and CVSS score 8.2
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Handlebars.js version 4.4.5 with ID npmjs:handlebars/4.4.5 violates policy No Critical/High: found vulnerability BDSA-2019-3682 with severity HIGH and CVSS score 8.4
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component ini version 1.3.5 with ID npmjs:ini/1.3.5 violates policy No Critical/High: found vulnerability BDSA-2020-4530 with severity HIGH and CVSS score 7.3
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Lodash version 4.17.15 with ID npmjs:lodash/4.17.15 violates policy No Critical/High: found vulnerability BDSA-2020-1674 with severity HIGH and CVSS score 8.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Lodash version 4.17.15 with ID npmjs:lodash/4.17.15 violates policy No Critical/High: found vulnerability BDSA-2020-3839 with severity HIGH and CVSS score 8.5
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Lodash version 4.17.15 with ID npmjs:lodash/4.17.15 violates policy No Critical/High: found vulnerability BDSA-2019-3842 with severity HIGH and CVSS score 7.1
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Lodash version 4.17.15 with ID npmjs:lodash/4.17.15 violates policy No Critical/High: found vulnerability BDSA-2021-0392 with severity HIGH and CVSS score 8.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component minimist version 0.0.10 with ID npmjs:minimist/0.0.10 violates policy No Critical/High: found vulnerability BDSA-2022-0771 with severity HIGH and CVSS score 8.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component minimist version 0.0.10 with ID npmjs:minimist/0.0.10 violates policy No Critical/High: found vulnerability BDSA-2020-4373 with severity HIGH and CVSS score 7.3
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component minimist version 0.0.8 with ID npmjs:minimist/0.0.8 violates policy No Critical/High: found vulnerability BDSA-2020-4373 with severity HIGH and CVSS score 7.3
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component minimist version 0.0.8 with ID npmjs:minimist/0.0.8 violates policy No Critical/High: found vulnerability BDSA-2022-0771 with severity HIGH and CVSS score 8.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component minimist version 1.2.0 with ID npmjs:minimist/1.2.0 violates policy No Critical/High: found vulnerability BDSA-2020-4373 with severity HIGH and CVSS score 7.3
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component minimist version 1.2.0 with ID npmjs:minimist/1.2.0 violates policy No Critical/High: found vulnerability BDSA-2022-0771 with severity HIGH and CVSS score 8.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Nodemailer version 4.7.0 with ID npmjs:nodemailer/4.7.0 violates policy No Critical/High: found vulnerability BDSA-2020-3322 with severity HIGH and CVSS score 8.4
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Nodemailer version 4.7.0 with ID npmjs:nodemailer/4.7.0 violates policy No Critical/High: found vulnerability BDSA-2021-4168 with severity HIGH and CVSS score 7.9
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component set-value version 2.0.1 with ID npmjs:set-value/2.0.1 violates policy No Critical/High: found vulnerability BDSA-2021-2911 with severity HIGH and CVSS score 8.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component set-value version 2.0.1 with ID npmjs:set-value/2.0.1 violates policy No Critical/High: found vulnerability BDSA-2019-4362 with severity HIGH and CVSS score 7.4
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component tar version 4.4.8 with ID npmjs:tar/4.4.8 violates policy No Critical/High: found vulnerability BDSA-2021-2334 with severity HIGH and CVSS score 7.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component tar version 4.4.8 with ID npmjs:tar/4.4.8 violates policy No Critical/High: found vulnerability BDSA-2021-2333 with severity HIGH and CVSS score 8.1
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component tar version 4.4.8 with ID npmjs:tar/4.4.8 violates policy No Critical/High: found vulnerability BDSA-2021-2631 with severity HIGH and CVSS score 7.5
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component tar version 4.4.8 with ID npmjs:tar/4.4.8 violates policy No Critical/High: found vulnerability BDSA-2021-2634 with severity HIGH and CVSS score 7.8
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component tar version 4.4.8 with ID npmjs:tar/4.4.8 violates policy No Critical/High: found vulnerability BDSA-2021-2632 with severity HIGH and CVSS score 8.1
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component Underscore.js version 1.9.1 with ID npmjs:underscore/1.9.1 violates policy No Critical/High: found vulnerability BDSA-2021-1143 with severity HIGH and CVSS score 7.3
+2022-04-20 19:28:14 GMT INFO  [main] --- 		Component yargs-parser version 10.1.0 with ID npmjs:yargs-parser/10.1.0 violates policy No Critical/High/No Critical Security Vulnerabilities: found vulnerability BDSA-2021-1478 with severity CRITICAL and CVSS score 9.1
+2022-04-20 19:28:14 GMT INFO  [main] ---
+2022-04-20 19:28:14 GMT INFO  [main] --- 	Security Warnings:
+2022-04-20 19:28:14 GMT INFO  [main] ---
+2022-04-20 19:28:14 GMT INFO  [main] --- 	License Errors:
+2022-04-20 19:28:14 GMT INFO  [main] ---
+2022-04-20 19:28:14 GMT INFO  [main] --- 	License Warnings:
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- Creating status file: /Users/jcroall/git/github/express-cart-demo/blackduck-output/runs/2022-04-20-19-27-52-351/status/status.json
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- Skipping cleanup, it is disabled.
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- ======== Detect Result ========
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- Rapid Scan Result: (for more detail look in the log for Rapid Scan Result Details)
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- 		Critical and blocking policy violations for
+2022-04-20 19:28:17 GMT INFO  [main] --- 			* Components: 0
+2022-04-20 19:28:17 GMT INFO  [main] --- 			* Security: 35
+2022-04-20 19:28:17 GMT INFO  [main] --- 			* License: 0
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- 		Other policy violations
+2022-04-20 19:28:17 GMT INFO  [main] --- 			* Components: 0
+2022-04-20 19:28:17 GMT INFO  [main] --- 			* Security: 0
+2022-04-20 19:28:17 GMT INFO  [main] --- 			* License: 0
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- 		Policies Violated:
+2022-04-20 19:28:17 GMT INFO  [main] --- 			No Critical Security Vulnerabilities
+2022-04-20 19:28:17 GMT INFO  [main] --- 			No Critical/High
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- 		Components with Policy Violations:
+2022-04-20 19:28:17 GMT INFO  [main] --- 			Async 2.6.3 (npmjs:async/2.6.3)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			Handlebars.js 4.4.5 (npmjs:handlebars/4.4.5)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			Lodash 4.17.15 (npmjs:lodash/4.17.15)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			Nodemailer 4.7.0 (npmjs:nodemailer/4.7.0)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			Underscore.js 1.9.1 (npmjs:underscore/1.9.1)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			ajv 6.10.2 (npmjs:ajv/6.10.2)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			axios 0.19.0 (npmjs:axios/0.19.0)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			css-what 2.1.0 (npmjs:css-what/2.1.0)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			dot-prop 4.2.0 (npmjs:dot-prop/4.2.0)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			express-handlebars v3.1.0 (npmjs:express-handlebars/3.1.0)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			follow-redirects v1.5.10 (npmjs:follow-redirects/1.5.10)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			ini 1.3.5 (npmjs:ini/1.3.5)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			js-bson 1.1.1 (npmjs:bson/1.1.1)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			minimist 0.0.10 (npmjs:minimist/0.0.10)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			minimist 0.0.8 (npmjs:minimist/0.0.8)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			minimist 1.2.0 (npmjs:minimist/1.2.0)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			set-value 2.0.1 (npmjs:set-value/2.0.1)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			tar 4.4.8 (npmjs:tar/4.4.8)
+2022-04-20 19:28:17 GMT INFO  [main] --- 			yargs-parser 10.1.0 (npmjs:yargs-parser/10.1.0)
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- 		Components with Policy Violation Warnings:
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- ======== Detect Status ========
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- GIT: SUCCESS
+2022-04-20 19:28:17 GMT INFO  [main] --- NPM: SUCCESS
+2022-04-20 19:28:17 GMT INFO  [main] --- Overall Status: FAILURE_POLICY_VIOLATION - Detect found policy violations.
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- ===============================
+2022-04-20 19:28:17 GMT INFO  [main] ---
+2022-04-20 19:28:17 GMT INFO  [main] --- Detect duration: 00h 00m 25s 389ms
+2022-04-20 19:28:17 GMT ERROR [main] --- Exiting with code 3 - FAILURE_POLICY_VIOLATION
+
+BD-Scan-Action: Processing scan data ...
+BD-Scan-Action: INFO: Project 'express-cart' Version '1.1.13' found - will compare against this project
+BD-Scan-Action: Getting componentid data ... 
+BD-Scan-Action: Getting component versions & upgrade guidance data ... 
+BD-Scan-Action: Getting version origin data ... 
+BD-Scan-Action: Validating upgrades cycle 1 ...
+BD-Scan-Action: Validating upgrades cycle 2 ...
+
+------------------------------------------------------------------------------------
+SUMMARY UPGRADE GUIDANCE:
+- cheerio/0.22.0: No Upgrade Available
+- express-handlebars/3.1.0: No Upgrade Available
+- ava/2.4.0: No Upgrade Available
+- gulp/4.0.2: No Upgrade Available
+- nodemailer/4.7.0: No Upgrade Available
+- connect-mongodb-session/2.2.0: Upgrade to 2.4.1
+- mongodb/3.3.3: Upgrade to 3.7.3
+- eslint/6.6.0: Upgrade to v6.8.0
+- lodash/4.17.15: Upgrade to 4.17.21
+- async/2.6.3: No Upgrade Available
+- ajv/6.10.2: Upgrade to 6.12.6
+- multer/1.4.2: Upgrade to v1.4.4
+- mkdirp/0.5.1: Upgrade to 0.5.6
+- axios/0.19.0: Upgrade to 0.26.1
+- underscore/1.9.1: Upgrade to 1.13.2
+- sitemap/1.13.0: No Upgrade Available
+------------------------------------------------------------------------------------
+
+BD-Scan-Action: Writing sarif output file './blackduck-sarif.json' ...
+BD-Scan-Action: INFO: Cleaning up folder blackduck-output
+BD-Scan-Action: Done - Returning OK

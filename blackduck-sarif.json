@@ -1,0 +1,659 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck",
+                    "organization": "Synopsys",
+                    "version": "1.0",
+                    "rules": [
+                        {
+                            "id": "cheerio",
+                            "shortDescription": {
+                                "text": "The direct dependency 'cheerio/0.22.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'cheerio/0.22.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations.\n\nList of direct vulnerabilities:\nCVE-2021-33587\n\nList of indirect vulnerabilities:\nCVE-2021-33587 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'cheerio/0.22.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| cheerio/0.22.0 | css-what/2.1.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/CVE-2021-33587/overview\" target=\"_blank\">CVE-2021-33587</a> | 7.5 | No Critical/High | The css-what package 4.0.0 through 5.0.0 for Node.js does not ensure that attribute parsing has Linear Time Complexity relative to the size of the input. |\n| cheerio/0.22.0 | css-what/2.1.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/CVE-2021-33587/overview\" target=\"_blank\">CVE-2021-33587</a> | 7.5 | No Critical/High | The css-what package 4.0.0 through 5.0.0 for Node.js does not ensure that attribute parsing has Linear Time Complexity relative to the size of the input. |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        },
+                        {
+                            "id": "express-handlebars",
+                            "shortDescription": {
+                                "text": "The direct dependency 'express-handlebars/3.1.0' has 7 vulnerabilities (max score 8.8) and 6 vulnerabilities in child dependencies (max score 8.4) reported by security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'express-handlebars/3.1.0' has 7 vulnerabilities (max score 8.8) and 6 vulnerabilities in child dependencies (max score 8.4) reported by security policy violations.\n\nList of direct vulnerabilities:\nCVE-2021-32820,BDSA-2019-3682,BDSA-2021-0925,BDSA-2019-3692,BDSA-2021-1225,BDSA-2020-4373,BDSA-2022-0771\n\nList of indirect vulnerabilities:\nBDSA-2019-3682,BDSA-2021-0925,BDSA-2019-3692,BDSA-2021-1225,BDSA-2020-4373,BDSA-2022-0771 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'express-handlebars/3.1.0' has 7 vulnerabilities (max score 8.8) and 6 vulnerabilities in child dependencies (max score 8.4) reported by security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| minimist/0.0.10 | minimist/0.0.10 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| minimist/0.0.10 | minimist/0.0.10 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| express-handlebars/3.1.0 | express-handlebars/3.1.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/CVE-2021-32820/overview\" target=\"_blank\">CVE-2021-32820</a> | 8.6 | No Critical/High | Express-handlebars is a Handlebars view engine for Express. Express-handlebars mixes pure template data with engine configuration options through the Express render API. More specifically, the lay ... |\n| express-handlebars/3.1.0 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3682/overview\" target=\"_blank\">BDSA-2019-3682</a> | 8.4 | No Critical/High | The handlebars package is vulnerable to cross-site scripting (XSS) and remote code execution (RCE) attacks due to improper validation of user-supplied input. In a cross-site scripting scenario, an ... |\n| express-handlebars/3.1.0 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3682/overview\" target=\"_blank\">BDSA-2019-3682</a> | 8.4 | No Critical/High | The handlebars package is vulnerable to cross-site scripting (XSS) and remote code execution (RCE) attacks due to improper validation of user-supplied input. In a cross-site scripting scenario, an ... |\n| handlebars/4.4.5 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3692/overview\" target=\"_blank\">BDSA-2019-3692</a> | 8.2 | No Critical/High | The handlebars package is vulnerable to arbitrary code execution via prototype pollution. A remote attacker can run malicious code by modifying properties of the Object prototype. Unsuccessful att ... |\n| handlebars/4.4.5 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3692/overview\" target=\"_blank\">BDSA-2019-3692</a> | 8.2 | No Critical/High | The handlebars package is vulnerable to arbitrary code execution via prototype pollution. A remote attacker can run malicious code by modifying properties of the Object prototype. Unsuccessful att ... |\n| handlebars/4.4.5 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0925/overview\" target=\"_blank\">BDSA-2021-0925</a> | 7.3 | No Critical/High | handlebars.js, an extension to the Mustache templating language, is vulnerable to remote code execution (RCE) when compiling templates that come from untrusted sources. Successful exploitation als ... |\n| handlebars/4.4.5 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1225/overview\" target=\"_blank\">BDSA-2021-1225</a> | 7.3 | No Critical/High | handlebars.js, an extension to the Mustache templating language, is vulnerable to Prototype Pollution when compiling templates that come from untrusted sources. Although successful exploitation co ... |\n| express-handlebars/3.1.0 | minimist/0.0.10 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| handlebars/4.4.5 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0925/overview\" target=\"_blank\">BDSA-2021-0925</a> | 7.3 | No Critical/High | handlebars.js, an extension to the Mustache templating language, is vulnerable to remote code execution (RCE) when compiling templates that come from untrusted sources. Successful exploitation als ... |\n| handlebars/4.4.5 | handlebars/4.4.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1225/overview\" target=\"_blank\">BDSA-2021-1225</a> | 7.3 | No Critical/High | handlebars.js, an extension to the Mustache templating language, is vulnerable to Prototype Pollution when compiling templates that come from untrusted sources. Although successful exploitation co ... |\n| express-handlebars/3.1.0 | minimist/0.0.10 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "ava",
+                            "shortDescription": {
+                                "text": "The direct dependency 'ava/2.4.0' has 5 vulnerabilities (max score 8.8) and 5 vulnerabilities in child dependencies (max score 9.1) reported by security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'ava/2.4.0' has 5 vulnerabilities (max score 8.8) and 5 vulnerabilities in child dependencies (max score 9.1) reported by security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771,BDSA-2021-1478,BDSA-2020-0654,BDSA-2020-4530\n\nList of indirect vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771,BDSA-2021-1478,BDSA-2020-0654,BDSA-2020-4530 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'ava/2.4.0' has 5 vulnerabilities (max score 8.8) and 5 vulnerabilities in child dependencies (max score 9.1) reported by security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| ava/2.4.0 | yargs-parser/10.1.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1478/overview\" target=\"_blank\">BDSA-2021-1478</a> | 9.1 | No Critical/High | yargs-parser is vulnerable to privilege escalation and remote code execution (RCE) via prototype pollution. |\n| ava/2.4.0 | yargs-parser/10.1.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1478/overview\" target=\"_blank\">BDSA-2021-1478</a> | 9.1 | No Critical/High | yargs-parser is vulnerable to privilege escalation and remote code execution (RCE) via prototype pollution. |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| ava/2.4.0 | dot-prop/4.2.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-0654/overview\" target=\"_blank\">BDSA-2020-0654</a> | 7.4 | No Critical/High | dot-prop is vulnerable to a prototype pollution flaw. A remote attacker able to supply specially crafted input to a dot-prop method could cause a denial-of-service (DoS) of the application, or aff ... |\n| ava/2.4.0 | dot-prop/4.2.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-0654/overview\" target=\"_blank\">BDSA-2020-0654</a> | 7.4 | No Critical/High | dot-prop is vulnerable to a prototype pollution flaw. A remote attacker able to supply specially crafted input to a dot-prop method could cause a denial-of-service (DoS) of the application, or aff ... |\n| ava/2.4.0 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| ava/2.4.0 | ini/1.3.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4530/overview\" target=\"_blank\">BDSA-2020-4530</a> | 7.3 | No Critical/High | The ini package is vulnerable to prototype pollution attacks.  A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) condition. The impact of this vulnerabili ... |\n| ava/2.4.0 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| ava/2.4.0 | ini/1.3.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4530/overview\" target=\"_blank\">BDSA-2020-4530</a> | 7.3 | No Critical/High | The ini package is vulnerable to prototype pollution attacks.  A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) condition. The impact of this vulnerabili ... |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "gulp",
+                            "shortDescription": {
+                                "text": "The direct dependency 'gulp/4.0.2' has 10 vulnerabilities (max score 8.8) and 10 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'gulp/4.0.2' has 10 vulnerabilities (max score 8.8) and 10 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771,BDSA-2019-4362,BDSA-2021-2911,BDSA-2021-2631,BDSA-2021-2634,BDSA-2021-2632,BDSA-2021-2333,BDSA-2021-2334,BDSA-2020-4530\n\nList of indirect vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771,BDSA-2019-4362,BDSA-2021-2911,BDSA-2021-2631,BDSA-2021-2634,BDSA-2021-2632,BDSA-2021-2333,BDSA-2021-2334,BDSA-2020-4530 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'gulp/4.0.2' has 10 vulnerabilities (max score 8.8) and 10 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| set-value/2.0.1 | set-value/2.0.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2911/overview\" target=\"_blank\">BDSA-2021-2911</a> | 8.8 | No Critical/High | set-value is vulnerable to a prototype pollution attack due to a type confusion error which can lead to a bypass of **CVE-2019-10747** (**BDSA-2019-4362**). A remote attacker may be able to execut ... |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| set-value/2.0.1 | set-value/2.0.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2911/overview\" target=\"_blank\">BDSA-2021-2911</a> | 8.8 | No Critical/High | set-value is vulnerable to a prototype pollution attack due to a type confusion error which can lead to a bypass of **CVE-2019-10747** (**BDSA-2019-4362**). A remote attacker may be able to execut ... |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2632/overview\" target=\"_blank\">BDSA-2021-2632</a> | 8.1 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite and arbitrary code execution via directory cache poisoning. |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2333/overview\" target=\"_blank\">BDSA-2021-2333</a> | 8.1 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite and arbitrary code execution via insufficient absolute path sanitization. |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2632/overview\" target=\"_blank\">BDSA-2021-2632</a> | 8.1 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite and arbitrary code execution via directory cache poisoning. |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2333/overview\" target=\"_blank\">BDSA-2021-2333</a> | 8.1 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite and arbitrary code execution via insufficient absolute path sanitization. |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2634/overview\" target=\"_blank\">BDSA-2021-2634</a> | 7.8 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite via insufficient relative path sanitization.   **Note:** This only affects users on Windows systems. |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2334/overview\" target=\"_blank\">BDSA-2021-2334</a> | 7.8 | No Critical/High | The node-tar package is vulnerable to arbitrary file creation/overwrite issues due to a flaw in the symlink protection measures that allows for an untrusted tar file to symlink into an arbitrary l ... |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2634/overview\" target=\"_blank\">BDSA-2021-2634</a> | 7.8 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite via insufficient relative path sanitization.   **Note:** This only affects users on Windows systems. |\n| tar/4.4.8 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2334/overview\" target=\"_blank\">BDSA-2021-2334</a> | 7.8 | No Critical/High | The node-tar package is vulnerable to arbitrary file creation/overwrite issues due to a flaw in the symlink protection measures that allows for an untrusted tar file to symlink into an arbitrary l ... |\n| gulp/4.0.2 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2631/overview\" target=\"_blank\">BDSA-2021-2631</a> | 7.5 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite and arbitrary code execution via directory cache poisoning. |\n| gulp/4.0.2 | tar/4.4.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-2631/overview\" target=\"_blank\">BDSA-2021-2631</a> | 7.5 | No Critical/High | The tar package for Node.js is vulnerable to arbitrary file creation/overwrite and arbitrary code execution via directory cache poisoning. |\n| gulp/4.0.2 | set-value/2.0.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-4362/overview\" target=\"_blank\">BDSA-2019-4362</a> | 7.4 | No Critical/High | set-value is vulnerable to prototype pollution due to insufficient input validation.  An attacker could exploit this vulnerability to modify the Object prototype properties which causes additional ... |\n| gulp/4.0.2 | set-value/2.0.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-4362/overview\" target=\"_blank\">BDSA-2019-4362</a> | 7.4 | No Critical/High | set-value is vulnerable to prototype pollution due to insufficient input validation.  An attacker could exploit this vulnerability to modify the Object prototype properties which causes additional ... |\n| gulp/4.0.2 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| gulp/4.0.2 | ini/1.3.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4530/overview\" target=\"_blank\">BDSA-2020-4530</a> | 7.3 | No Critical/High | The ini package is vulnerable to prototype pollution attacks.  A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) condition. The impact of this vulnerabili ... |\n| gulp/4.0.2 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| gulp/4.0.2 | ini/1.3.5 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4530/overview\" target=\"_blank\">BDSA-2020-4530</a> | 7.3 | No Critical/High | The ini package is vulnerable to prototype pollution attacks.  A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) condition. The impact of this vulnerabili ... |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "nodemailer",
+                            "shortDescription": {
+                                "text": "The direct dependency nodemailer/4.7.0 has 2 vulnerabilities (max score 8.4)  reported by security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency nodemailer/4.7.0 has 2 vulnerabilities (max score 8.4)  reported by security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-3322,BDSA-2021-4168"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency nodemailer/4.7.0 has 2 vulnerabilities (max score 8.4)  reported by security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| nodemailer/4.7.0 | nodemailer/4.7.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3322/overview\" target=\"_blank\">BDSA-2020-3322</a> | 8.4 | No Critical/High | Nodemailer is vulnerable to a command injection issue due to insufficient validation of provided email addresses.  An attacker could supply crafted email addresses in order to execute arbitrary co ... |\n| nodemailer/4.7.0 | nodemailer/4.7.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-4168/overview\" target=\"_blank\">BDSA-2021-4168</a> | 7.9 | No Critical/High | A HTTP header injection vulnerability has been identified in nodemailer. An attacker could exploit this by passing crafted input containing newlines and carriage returns to an `address` object. |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.4"
+                            }
+                        },
+                        {
+                            "id": "connect-mongodb-session",
+                            "shortDescription": {
+                                "text": "The direct dependency 'connect-mongodb-session/2.2.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '2.4.1' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'connect-mongodb-session/2.2.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '2.4.1' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-0604\n\nList of indirect vulnerabilities:\nBDSA-2020-0604 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'connect-mongodb-session/2.2.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '2.4.1' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| connect-mongodb-session/2.2.0 | bson/1.1.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-0604/overview\" target=\"_blank\">BDSA-2020-0604</a> | 7.9 | No Critical/High | Bson contains a deserialization of untrusted data vulnerability due to improper handling of user input. An attacker could exploit this vulnerability through specially crafted input which could lea ... |\n| connect-mongodb-session/2.2.0 | bson/1.1.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-0604/overview\" target=\"_blank\">BDSA-2020-0604</a> | 7.9 | No Critical/High | Bson contains a deserialization of untrusted data vulnerability due to improper handling of user input. An attacker could exploit this vulnerability through specially crafted input which could lea ... |\n\n\nRecommended to upgrade to version 2.4.1.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        },
+                        {
+                            "id": "mongodb",
+                            "shortDescription": {
+                                "text": "The direct dependency 'mongodb/3.3.3' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '3.7.3' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'mongodb/3.3.3' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '3.7.3' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-0604\n\nList of indirect vulnerabilities:\nBDSA-2020-0604 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'mongodb/3.3.3' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '3.7.3' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| mongodb/3.3.3 | bson/1.1.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-0604/overview\" target=\"_blank\">BDSA-2020-0604</a> | 7.9 | No Critical/High | Bson contains a deserialization of untrusted data vulnerability due to improper handling of user input. An attacker could exploit this vulnerability through specially crafted input which could lea ... |\n| mongodb/3.3.3 | bson/1.1.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-0604/overview\" target=\"_blank\">BDSA-2020-0604</a> | 7.9 | No Critical/High | Bson contains a deserialization of untrusted data vulnerability due to improper handling of user input. An attacker could exploit this vulnerability through specially crafted input which could lea ... |\n\n\nRecommended to upgrade to version 3.7.3.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        },
+                        {
+                            "id": "eslint",
+                            "shortDescription": {
+                                "text": "The direct dependency 'eslint/6.6.0' has 3 vulnerabilities (max score 8.8) and 3 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v6.8.0' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'eslint/6.6.0' has 3 vulnerabilities (max score 8.8) and 3 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v6.8.0' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-3798,BDSA-2020-4373,BDSA-2022-0771\n\nList of indirect vulnerabilities:\nBDSA-2020-3798,BDSA-2020-4373,BDSA-2022-0771 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'eslint/6.6.0' has 3 vulnerabilities (max score 8.8) and 3 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v6.8.0' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| eslint/6.6.0 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| eslint/6.6.0 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| eslint/6.6.0 | ajv/6.10.2 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3798/overview\" target=\"_blank\">BDSA-2020-3798</a> | 7.1 | No Critical/High | nodejs-ajv is vulnerable to a prototype pollution flaw. A remote attacker could leverage this to execute arbitrary code. |\n| eslint/6.6.0 | ajv/6.10.2 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3798/overview\" target=\"_blank\">BDSA-2020-3798</a> | 7.1 | No Critical/High | nodejs-ajv is vulnerable to a prototype pollution flaw. A remote attacker could leverage this to execute arbitrary code. |\n\n\nRecommended to upgrade to version v6.8.0.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "lodash",
+                            "shortDescription": {
+                                "text": "The direct dependency lodash/4.17.15 has 4 vulnerabilities (max score 8.8)  reported by security policy violations. Upgrade to version '4.17.21' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency lodash/4.17.15 has 4 vulnerabilities (max score 8.8)  reported by security policy violations. Upgrade to version '4.17.21' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2019-3842,BDSA-2020-3839,BDSA-2020-1674,BDSA-2021-0392"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency lodash/4.17.15 has 4 vulnerabilities (max score 8.8)  reported by security policy violations. Upgrade to version '4.17.21' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-1674/overview\" target=\"_blank\">BDSA-2020-1674</a> | 8.8 | No Critical/High | Lodash is vulnerable to remote code execution (RCE) due to the potential to modify the properties of objects in memory. A remote attacker could run arbitrary commands on a vulnerable server, or ca ... |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0392/overview\" target=\"_blank\">BDSA-2021-0392</a> | 8.8 | No Critical/High | Lodash is vulnerable to command injection via the `template` function. An attacker can take advantage of this vulnerability in order to run arbitrary commands. |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3839/overview\" target=\"_blank\">BDSA-2020-3839</a> | 8.5 | No Critical/High | lodash is vulnerable to a prototype pollution flaw. A remote attacker may be able to supply specially crafted input to cause serious confidentiality, integrity and availability impacts to the appl ... |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3842/overview\" target=\"_blank\">BDSA-2019-3842</a> | 7.1 | No Critical/High | Lodash contains a denial-of-service (DoS) vulnerability.  This is due to multiple methods not validating the length of content supplied to it.  If an application is passing untrusted-input to the  ... |\n\n\nRecommended to upgrade to version 4.17.21.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "async",
+                            "shortDescription": {
+                                "text": "The direct dependency 'async/2.6.3' has 5 vulnerabilities (max score 8.8) and 4 vulnerabilities in child dependencies (max score 7.1) reported by security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'async/2.6.3' has 5 vulnerabilities (max score 8.8) and 4 vulnerabilities in child dependencies (max score 7.1) reported by security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2019-3842,BDSA-2020-3839,BDSA-2020-1674,BDSA-2021-0392,BDSA-2022-0962\n\nList of indirect vulnerabilities:\nBDSA-2019-3842,BDSA-2020-3839,BDSA-2020-1674,BDSA-2021-0392 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'async/2.6.3' has 5 vulnerabilities (max score 8.8) and 4 vulnerabilities in child dependencies (max score 7.1) reported by security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-1674/overview\" target=\"_blank\">BDSA-2020-1674</a> | 8.8 | No Critical/High | Lodash is vulnerable to remote code execution (RCE) due to the potential to modify the properties of objects in memory. A remote attacker could run arbitrary commands on a vulnerable server, or ca ... |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0392/overview\" target=\"_blank\">BDSA-2021-0392</a> | 8.8 | No Critical/High | Lodash is vulnerable to command injection via the `template` function. An attacker can take advantage of this vulnerability in order to run arbitrary commands. |\n| async/2.6.3 | async/2.6.3 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0962/overview\" target=\"_blank\">BDSA-2022-0962</a> | 8.8 | No Critical/High | Async is vulnerable to a prototype pollution issue. A remote attacker may be able to abuse this issue in order to execute arbitrary code, obtain privileges, or cause a denial-of-service (DoS) by t ... |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-1674/overview\" target=\"_blank\">BDSA-2020-1674</a> | 8.8 | No Critical/High | Lodash is vulnerable to remote code execution (RCE) due to the potential to modify the properties of objects in memory. A remote attacker could run arbitrary commands on a vulnerable server, or ca ... |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-0392/overview\" target=\"_blank\">BDSA-2021-0392</a> | 8.8 | No Critical/High | Lodash is vulnerable to command injection via the `template` function. An attacker can take advantage of this vulnerability in order to run arbitrary commands. |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3839/overview\" target=\"_blank\">BDSA-2020-3839</a> | 8.5 | No Critical/High | lodash is vulnerable to a prototype pollution flaw. A remote attacker may be able to supply specially crafted input to cause serious confidentiality, integrity and availability impacts to the appl ... |\n| lodash/4.17.15 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3839/overview\" target=\"_blank\">BDSA-2020-3839</a> | 8.5 | No Critical/High | lodash is vulnerable to a prototype pollution flaw. A remote attacker may be able to supply specially crafted input to cause serious confidentiality, integrity and availability impacts to the appl ... |\n| async/2.6.3 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3842/overview\" target=\"_blank\">BDSA-2019-3842</a> | 7.1 | No Critical/High | Lodash contains a denial-of-service (DoS) vulnerability.  This is due to multiple methods not validating the length of content supplied to it.  If an application is passing untrusted-input to the  ... |\n| async/2.6.3 | lodash/4.17.15 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2019-3842/overview\" target=\"_blank\">BDSA-2019-3842</a> | 7.1 | No Critical/High | Lodash contains a denial-of-service (DoS) vulnerability.  This is due to multiple methods not validating the length of content supplied to it.  If an application is passing untrusted-input to the  ... |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "ajv",
+                            "shortDescription": {
+                                "text": "The direct dependency ajv/6.10.2 has 1 vulnerabilities (max score 7.1)  reported by security policy violations. Upgrade to version '6.12.6' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency ajv/6.10.2 has 1 vulnerabilities (max score 7.1)  reported by security policy violations. Upgrade to version '6.12.6' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-3798"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency ajv/6.10.2 has 1 vulnerabilities (max score 7.1)  reported by security policy violations. Upgrade to version '6.12.6' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| ajv/6.10.2 | ajv/6.10.2 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3798/overview\" target=\"_blank\">BDSA-2020-3798</a> | 7.1 | No Critical/High | nodejs-ajv is vulnerable to a prototype pollution flaw. A remote attacker could leverage this to execute arbitrary code. |\n\n\nRecommended to upgrade to version 6.12.6.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "7.1"
+                            }
+                        },
+                        {
+                            "id": "multer",
+                            "shortDescription": {
+                                "text": "The direct dependency 'multer/1.4.2' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v1.4.4' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'multer/1.4.2' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v1.4.4' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771\n\nList of indirect vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'multer/1.4.2' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v1.4.4' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| multer/1.4.2 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| multer/1.4.2 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n\n\nRecommended to upgrade to version v1.4.4.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "mkdirp",
+                            "shortDescription": {
+                                "text": "The direct dependency 'mkdirp/0.5.1' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version '0.5.6' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'mkdirp/0.5.1' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version '0.5.6' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771\n\nList of indirect vulnerabilities:\nBDSA-2020-4373,BDSA-2022-0771 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'mkdirp/0.5.1' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version '0.5.6' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| minimist/0.0.8 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0771/overview\" target=\"_blank\">BDSA-2022-0771</a> | 8.8 | No Critical/High | Minimist contains a prototype pollution vulnerability. A remote attacker could exploit this issue by adding or modifying properties of `Function.prototype`, which may lead to execution of arbitrar ... |\n| mkdirp/0.5.1 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n| mkdirp/0.5.1 | minimist/0.0.8 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-4373/overview\" target=\"_blank\">BDSA-2020-4373</a> | 7.3 | No Critical/High | minimist is vulnerable to a prototype pollution attack. A remote attacker may be able to execute arbitrary code, or cause a denial-of-service (DoS) by tricking the library into modifying or adding ... |\n\n\nRecommended to upgrade to version 0.5.6.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "8.8"
+                            }
+                        },
+                        {
+                            "id": "axios",
+                            "shortDescription": {
+                                "text": "The direct dependency 'axios/0.19.0' has 3 vulnerabilities (max score 7.8) and 1 vulnerabilities in child dependencies (max score 7.7) reported by security policy violations. Upgrade to version '0.26.1' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'axios/0.19.0' has 3 vulnerabilities (max score 7.8) and 1 vulnerabilities in child dependencies (max score 7.7) reported by security policy violations. Upgrade to version '0.26.1' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nCVE-2021-3749,BDSA-2020-3243,BDSA-2022-0139\n\nList of indirect vulnerabilities:\nBDSA-2022-0139 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'axios/0.19.0' has 3 vulnerabilities (max score 7.8) and 1 vulnerabilities in child dependencies (max score 7.7) reported by security policy violations. Upgrade to version '0.26.1' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| axios/0.19.0 | axios/0.19.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2020-3243/overview\" target=\"_blank\">BDSA-2020-3243</a> | 7.8 | No Critical/High | It was found that axios could allow for server side request forgery (SSRF) attacks if it is used to pass user-supplied URL requests via a proxy. This vulnerability could be used to bypass the prox ... |\n| axios/0.19.0 | follow-redirects/1.5.10 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0139/overview\" target=\"_blank\">BDSA-2022-0139</a> | 7.7 | No Critical/High | follow-redirects contains an information disclosure vulnerability due to insecure cookie headers. An attacker could exploit this issue to disclose potentially sensitive information belonging to th ... |\n| axios/0.19.0 | follow-redirects/1.5.10 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2022-0139/overview\" target=\"_blank\">BDSA-2022-0139</a> | 7.7 | No Critical/High | follow-redirects contains an information disclosure vulnerability due to insecure cookie headers. An attacker could exploit this issue to disclose potentially sensitive information belonging to th ... |\n| axios/0.19.0 | axios/0.19.0 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/CVE-2021-3749/overview\" target=\"_blank\">CVE-2021-3749</a> | 7.5 | No Critical/High | axios is vulnerable to Inefficient Regular Expression Complexity |\n\n\nRecommended to upgrade to version 0.26.1.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "7.8"
+                            }
+                        },
+                        {
+                            "id": "underscore",
+                            "shortDescription": {
+                                "text": "The direct dependency underscore/1.9.1 has 1 vulnerabilities (max score 7.3)  reported by security policy violations. Upgrade to version '1.13.2' to address the reported security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency underscore/1.9.1 has 1 vulnerabilities (max score 7.3)  reported by security policy violations. Upgrade to version '1.13.2' to address the reported security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2021-1143"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency underscore/1.9.1 has 1 vulnerabilities (max score 7.3)  reported by security policy violations. Upgrade to version '1.13.2' to address the reported security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| underscore/1.9.1 | underscore/1.9.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1143/overview\" target=\"_blank\">BDSA-2021-1143</a> | 7.3 | No Critical/High | The Underscore Javascript library contains an arbitrary code execution vulnerability.  This allows an attacker to create malicious content that, if processed by Underscore may lead to the executio ... |\n\n\nRecommended to upgrade to version 1.13.2.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "7.3"
+                            }
+                        },
+                        {
+                            "id": "sitemap",
+                            "shortDescription": {
+                                "text": "The direct dependency 'sitemap/1.13.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency 'sitemap/1.13.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations.\n\nList of direct vulnerabilities:\nBDSA-2021-1143\n\nList of indirect vulnerabilities:\nBDSA-2021-1143 "
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency 'sitemap/1.13.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations.\n\n\n| Direct Dependency | Affected Component | Vulnerability | Score |  Policy Violated | Description |\n| --- | --- | --- | --- | --- | --- |\n| sitemap/1.13.0 | underscore/1.9.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1143/overview\" target=\"_blank\">BDSA-2021-1143</a> | 7.3 | No Critical/High | The Underscore Javascript library contains an arbitrary code execution vulnerability.  This allows an attacker to create malicious content that, if processed by Underscore may lead to the executio ... |\n| sitemap/1.13.0 | underscore/1.9.1 | <a href=\"https://testing.blackduck.synopsys.com/api/vulnerabilities/BDSA-2021-1143/overview\" target=\"_blank\">BDSA-2021-1143</a> | 7.3 | No Critical/High | The Underscore Javascript library contains an arbitrary code execution vulnerability.  This allows an attacker to create malicious content that, if processed by Underscore may lead to the executio ... |\n\n\nNo upgrade available at this time.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "0"
+                            }
+                        }
+                    ]
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "cheerio",
+                    "message": {
+                        "text": "The direct dependency 'cheerio/0.22.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 23
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "express-handlebars",
+                    "message": {
+                        "text": "The direct dependency 'express-handlebars/3.1.0' has 7 vulnerabilities (max score 8.8) and 6 vulnerabilities in child dependencies (max score 8.4) reported by security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 28
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "ava",
+                    "message": {
+                        "text": "The direct dependency 'ava/2.4.0' has 5 vulnerabilities (max score 8.8) and 5 vulnerabilities in child dependencies (max score 9.1) reported by security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 57
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "gulp",
+                    "message": {
+                        "text": "The direct dependency 'gulp/4.0.2' has 10 vulnerabilities (max score 8.8) and 10 vulnerabilities in child dependencies (max score 7.5) reported by security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 64
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "nodemailer",
+                    "message": {
+                        "text": "The direct dependency nodemailer/4.7.0 has 2 vulnerabilities (max score 8.4)  reported by security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 44
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "connect-mongodb-session",
+                    "message": {
+                        "text": "The direct dependency 'connect-mongodb-session/2.2.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '2.4.1' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 25
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "mongodb",
+                    "message": {
+                        "text": "The direct dependency 'mongodb/3.3.3' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.9) reported by security policy violations. Upgrade to version '3.7.3' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 39
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "eslint",
+                    "message": {
+                        "text": "The direct dependency 'eslint/6.6.0' has 3 vulnerabilities (max score 8.8) and 3 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v6.8.0' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 58
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "lodash",
+                    "message": {
+                        "text": "The direct dependency lodash/4.17.15 has 4 vulnerabilities (max score 8.8)  reported by security policy violations. Upgrade to version '4.17.21' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 34
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "async",
+                    "message": {
+                        "text": "The direct dependency 'async/2.6.3' has 5 vulnerabilities (max score 8.8) and 4 vulnerabilities in child dependencies (max score 7.1) reported by security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 19
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "ajv",
+                    "message": {
+                        "text": "The direct dependency ajv/6.10.2 has 1 vulnerabilities (max score 7.1)  reported by security policy violations. Upgrade to version '6.12.6' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 18
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "multer",
+                    "message": {
+                        "text": "The direct dependency 'multer/1.4.2' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version 'v1.4.4' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 42
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "mkdirp",
+                    "message": {
+                        "text": "The direct dependency 'mkdirp/0.5.1' has 2 vulnerabilities (max score 8.8) and 2 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations. Upgrade to version '0.5.6' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 37
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "axios",
+                    "message": {
+                        "text": "The direct dependency 'axios/0.19.0' has 3 vulnerabilities (max score 7.8) and 1 vulnerabilities in child dependencies (max score 7.7) reported by security policy violations. Upgrade to version '0.26.1' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 21
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "underscore",
+                    "message": {
+                        "text": "The direct dependency underscore/1.9.1 has 1 vulnerabilities (max score 7.3)  reported by security policy violations. Upgrade to version '1.13.2' to address the reported security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 54
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "sitemap",
+                    "message": {
+                        "text": "The direct dependency 'sitemap/1.13.0' has 1 vulnerabilities (max score 0) and 1 vulnerabilities in child dependencies (max score 7.3) reported by security policy violations."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 50
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
