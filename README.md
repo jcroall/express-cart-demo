@@ -320,3 +320,5 @@ I'm looking for contributors of any kind. I'm working on turning the admin panel
 Contributing payment providers and themes would be much appreciated. Payment providers are added by simply adding the payment provider file to `/routes/payments/providerName.js`, then adding the route to the `app.js` file by adding `const providerName = require('./routes/payments/{providerName}');` and mounting the route `app.use('/providerName', providerName);`.
 
 If you see current code which could be enhanced (note: parts of the code is quite old but new to Github) you are welcome to submit a PR.
+
+
